@@ -14,9 +14,9 @@
 $
 
 # Command Line History (newest to oldest):
+:w
 :q
 :q!
-:w
 :wq
 :W
 :1
@@ -60,64 +60,100 @@ $
 
 # Registers:
 "0	LINE	0
-	# coding:utf-8
-	'''
-	from numpy import *
-	x = [12,12,12,12,12,12]
-	s = sum(x)
-	print s
-	print s/6
-	'''
-	from numpy import *
-	from sklearn.datasets import load_iris
-	# from matplotlib.pyplot as plt
-	
-	iris = load_iris()
-	samples = iris.data
-	target = iris.target
-	print "This is samples:", samples
-	print "This is target:", target
-	
-	from sklearn.linear_model import LogisticRegression
-	classifier = LogisticRegression()
-	classifier.fit(samples, target)
-	
-	x = classifier.predict([5, 3, 5, 2.5])
-	print x
-"1	LINE	0
-	
+	            training_a2.append(float(item[1]))
+""1	LINE	0
+	        # return key
 "2	LINE	0
-	'''
+	        '''
 "3	LINE	0
-	print test_x
+	        return key
 "4	LINE	0
-	test_x = clf.predict(test_y)
+	            key = 2
 "5	LINE	0
-	test_y = testdata.
+	        elif c>a and c>b:
 "6	LINE	0
-	# 测试
+	            key = 0
 "7	LINE	0
-	clf.fit(training_X, training_Y)
+	        elif a>b and a>c:
 "8	LINE	0
-	clf = LogisticRegression()
+	            key = 1
 "9	LINE	0
-	# 训练
-""-	CHAR	0
-	 
+	        if b>a and b>c:
+"-	CHAR	0
+	=
 
 # File marks:
-'0  1  0  ~/test.py
-'1  158  0  /usr/local/lib/python2.7/dist-packages/sklearn/naive_bayes.py
-'2  96  0  ~/gb_ips/training/views.py
-'3  27  0  ~/gb_ips/training/views.py
-'4  22  59  ~/learn/standard/data/views.py
-'5  69  0  ~/gb_ips/training/views.py
+'0  110  2  ~/bayes.py
+'1  119  2  ~/bayes.py
+'2  28  43  ~/bayes.py
+'3  100  0  ~/bayes.py
+'4  94  30  ~/bayes.py
+'5  94  8  ~/bayes.py
 '6  1  0  ~/logisticregression.py
 '7  1  0  ~/bayes.py
 '8  14  0  ~/logisticregression.py
 '9  14  0  ~/learn/standard/data/views.py
 
 # Jumplist (newest first):
+-'  110  2  ~/bayes.py
+-'  116  9  ~/bayes.py
+-'  115  13  ~/bayes.py
+-'  118  1  ~/bayes.py
+-'  12  1  ~/bayes.py
+-'  94  9  ~/bayes.py
+-'  49  42  ~/bayes.py
+-'  53  8  ~/bayes.py
+-'  57  24  ~/bayes.py
+-'  13  0  ~/bayes.py
+-'  24  0  ~/bayes.py
+-'  1  0  ~/bayes.py
+-'  119  2  ~/bayes.py
+-'  93  8  ~/bayes.py
+-'  111  0  ~/bayes.py
+-'  117  0  ~/bayes.py
+-'  28  43  ~/bayes.py
+-'  100  0  ~/bayes.py
+-'  25  0  ~/bayes.py
+-'  29  0  ~/bayes.py
+-'  88  8  ~/bayes.py
+-'  90  8  ~/bayes.py
+-'  87  8  ~/bayes.py
+-'  108  77  ~/bayes.py
+-'  85  18  ~/bayes.py
+-'  84  24  ~/bayes.py
+-'  91  33  ~/bayes.py
+-'  101  0  ~/bayes.py
+-'  95  45  ~/bayes.py
+-'  96  34  ~/bayes.py
+-'  83  9  ~/bayes.py
+-'  71  8  ~/bayes.py
+-'  65  15  ~/bayes.py
+-'  38  18  ~/bayes.py
+-'  27  9  ~/bayes.py
+-'  113  3  ~/bayes.py
+-'  18  14  ~/bayes.py
+-'  23  2  ~/bayes.py
+-'  64  17  ~/bayes.py
+-'  5  17  ~/bayes.py
+-'  56  7  ~/bayes.py
+-'  55  10  ~/bayes.py
+-'  50  37  ~/bayes.py
+-'  52  32  ~/bayes.py
+-'  14  16  ~/bayes.py
+-'  120  24  ~/bayes.py
+-'  21  0  ~/bayes.py
+-'  2  0  ~/bayes.py
+-'  1  0  ~/logisticregression.py
+-'  14  0  ~/logisticregression.py
+-'  24  0  ~/logisticregression.py
+-'  25  0  ~/logisticregression.py
+-'  14  0  ~/learn/standard/data/views.py
+-'  1  0  ~/learn/standard/data/views.py
+-'  1  0  ~/learn/standard/data/test.py
+-'  93  54  ~/gb_ips/training/views.py
+-'  1  0  ~/gb_ips/training/views.py
+-'  36  0  ~/gb_ips/training/views.py
+-'  1  0  ~/.ssh/id_rsa.pub
 -'  1  0  ~/test.py
 -'  158  0  /usr/local/lib/python2.7/dist-packages/sklearn/naive_bayes.py
 -'  1  0  /usr/local/lib/python2.7/dist-packages/sklearn/naive_bayes.py
@@ -128,96 +164,119 @@ $
 -'  1  0  ~/learn/standard/data/views.py
 -'  69  0  ~/gb_ips/training/views.py
 -'  1  0  ~/logisticregression.py
--'  1  0  ~/bayes.py
 -'  14  0  ~/logisticregression.py
 -'  24  0  ~/logisticregression.py
 -'  25  0  ~/logisticregression.py
 -'  14  0  ~/learn/standard/data/views.py
--'  1  0  ~/learn/standard/data/test.py
--'  93  54  ~/gb_ips/training/views.py
--'  36  0  ~/gb_ips/training/views.py
--'  89  11  ~/gb_ips/training/views.py
--'  48  10  ~/gb_ips/training/views.py
--'  85  51  ~/gb_ips/training/views.py
--'  80  0  ~/gb_ips/training/views.py
--'  49  8  ~/gb_ips/training/views.py
--'  21  14  ~/gb_ips/training/views.py
--'  84  23  ~/gb_ips/training/views.py
--'  5  43  ~/gb_ips/training/postdata.py
--'  6  15  ~/gb_ips/training/postdata.py
--'  1  0  ~/gb_ips/training/postdata.py
--'  14  29  ~/gb_ips/training/views.py
--'  7  27  ~/gb_ips/training/postdata.py
--'  86  4  ~/gb_ips/training/views.py
--'  78  16  ~/gb_ips/training/views.py
--'  47  12  ~/gb_ips/training/views.py
--'  45  8  ~/gb_ips/training/views.py
--'  76  20  ~/gb_ips/training/views.py
--'  79  8  ~/gb_ips/training/views.py
--'  32  8  ~/gb_ips/training/views.py
--'  81  0  ~/gb_ips/training/views.py
--'  77  33  ~/gb_ips/training/views.py
--'  75  28  ~/gb_ips/training/views.py
--'  73  12  ~/gb_ips/training/views.py
--'  72  12  ~/gb_ips/training/views.py
--'  74  24  ~/gb_ips/training/views.py
--'  46  12  ~/gb_ips/training/views.py
--'  43  8  ~/gb_ips/training/views.py
--'  83  7  ~/gb_ips/training/views.py
--'  31  8  ~/gb_ips/training/views.py
--'  71  12  ~/gb_ips/training/views.py
--'  35  0  ~/learn/standard/data/models.py
--'  1  0  ~/learn/standard/data/models.py
--'  29  0  ~/learn/standard/data/views.py
--'  21  0  ~/learn/standard/data/views.py
--'  117  0  ~/ips/ips_core/meas_raw.py
--'  1  0  ~/ips/ips_core/meas_raw.py
--'  1  0  ~/ips/ips_core/views.py
--'  66  0  ~/ips/ips_core/meas_raw.py
--'  12  6  ~/ips/ips_core/meas_raw.py
--'  36  16  ~/ips/ips_core/meas_raw.py
--'  131  5  ~/ips/ips_core/meas_raw.py
--'  130  11  ~/ips/ips_core/meas_raw.py
--'  94  12  ~/ips/ips_core/meas_raw.py
--'  57  17  ~/ips/ips_core/meas_raw.py
--'  189  12  ~/ips/ips_core/models.py
--'  99  13  ~/ips/ips_core/models.py
--'  98  13  ~/ips/ips_core/models.py
--'  87  43  ~/ips/ips_core/models.py
--'  20  13  ~/ips/ips_core/models.py
--'  19  13  ~/ips/ips_core/models.py
--'  208  20  ~/ips/ips_core/models.py
--'  203  27  ~/ips/ips_core/models.py
--'  201  31  ~/ips/ips_core/models.py
--'  45  0  ~/ips/ips_core/models.py
--'  1  0  ~/ips/ips_core/models.py
--'  59  0  ~/ips/ips_core/meas_raw.py
--'  50  13  ~/ips/ips_core/meas_raw.py
--'  30  0  ~/learn/standard/data/views.py
--'  143  17  ~/gb_ips/training/views.py
--'  24  0  ~/gb_ips/training/views.py
--'  127  8  ~/gb_ips/training/views.py
--'  111  0  ~/ips/ips_core/meas_raw.py
--'  144  0  ~/gb_ips/training/views.py
--'  61  0  ~/ips/ips_core/meas_raw.py
--'  11  0  ~/ips/ips_core/meas_raw.py
--'  1  0  ~/ips/NERD_tree_1
--'  14  2  ~/ips/NERD_tree_1
--'  145  0  ~/gb_ips/training/views.py
--'  1  0  ~/ips/api/urls.py
--'  2  0  ~/ips/ips/urls.py
--'  1  0  ~/ips/ips/urls.py
--'  36  0  ~/learn/standard/data/views.py
--'  48  0  ~/learn/standard/data/models.py
--'  50  22  ~/learn/standard/data/models.py
--'  1  0  ~/learn/standard/data/tests.py
--'  117  0  ~/learn/standard/data/models.py
--'  1  0  ~/learn/standard/data/models.py
--'  1  0  ~/learn/standard/data/models.pt
--'  35  0  ~/learn/standard/standard/settings.py
--'  1  0  ~/learn/standard/standard/settings.py
 
 # History of marks within files (newest to oldest):
+
+> ~/bayes.py
+	"	110	2
+	.	116	0
+	+	98	0
+	+	99	77
+	+	100	77
+	+	102	76
+	+	103	76
+	+	104	74
+	+	103	74
+	+	102	74
+	+	101	0
+	+	105	0
+	+	106	0
+	+	107	0
+	+	106	77
+	+	107	77
+	+	108	77
+	+	91	8
+	+	87	8
+	+	88	33
+	+	90	33
+	+	87	8
+	+	88	43
+	+	90	42
+	+	91	43
+	+	90	8
+	+	88	8
+	+	90	8
+	+	88	8
+	+	89	42
+	+	88	8
+	+	28	14
+	+	29	0
+	+	28	67
+	+	94	15
+	+	94	0
+	+	94	0
+	+	94	0
+	+	27	15
+	+	29	0
+	+	25	0
+	+	50	0
+	+	94	54
+	+	94	0
+	+	94	8
+	+	94	30
+	+	28	43
+	+	27	0
+	+	116	18
+	+	116	0
+	+	116	0
+	+	116	26
+	+	116	19
+	+	114	0
+	+	116	27
+	+	114	0
+	+	116	35
+	+	114	0
+	+	95	0
+	+	94	0
+	+	94	0
+	+	116	15
+	+	116	13
+	+	116	17
+	+	116	0
+	+	93	8
+	+	94	0
+	+	92	0
+	+	94	8
+	+	12	0
+	+	25	0
+	+	24	0
+	+	12	0
+	+	13	1
+	+	15	1
+	+	16	1
+	+	57	24
+	+	57	0
+	+	57	0
+	+	57	0
+	+	57	24
+	+	57	24
+	+	57	24
+	+	57	0
+	+	53	0
+	+	49	0
+	+	53	0
+	+	57	0
+	+	49	42
+	+	48	0
+	+	93	8
+	+	94	9
+	+	116	10
+	+	116	10
+	+	116	0
+	+	114	0
+	+	114	0
+	+	116	17
+	+	12	1
+	+	116	0
+	+	115	14
+	+	116	0
+
+> ~/.ssh/id_rsa.pub
+	"	1	0
 
 > ~/test.py
 	"	1	0
@@ -291,111 +350,6 @@ $
 
 > /usr/local/lib/python2.7/dist-packages/sklearn/naive_bayes.py
 	"	158	0
-
-> ~/bayes.py
-	"	138	2
-	.	127	0
-	+	90	0
-	+	91	8
-	+	6	10
-	+	91	0
-	+	97	0
-	+	100	31
-	+	100	0
-	+	101	31
-	+	101	0
-	+	102	31
-	+	103	0
-	+	104	31
-	+	105	26
-	+	106	26
-	+	104	0
-	+	106	26
-	+	105	0
-	+	108	26
-	+	109	26
-	+	110	26
-	+	112	26
-	+	113	26
-	+	114	26
-	+	107	0
-	+	108	0
-	+	109	0
-	+	111	0
-	+	112	0
-	+	113	0
-	+	100	74
-	+	97	0
-	+	101	74
-	+	100	0
-	+	102	74
-	+	101	0
-	+	104	74
-	+	103	0
-	+	104	0
-	+	105	77
-	+	106	77
-	+	108	76
-	+	109	76
-	+	110	74
-	+	109	74
-	+	108	74
-	+	107	0
-	+	111	0
-	+	112	0
-	+	113	0
-	+	112	77
-	+	113	77
-	+	114	77
-	+	97	8
-	+	93	8
-	+	94	33
-	+	96	33
-	+	93	8
-	+	94	43
-	+	96	42
-	+	97	43
-	+	96	8
-	+	94	8
-	+	96	8
-	+	94	8
-	+	95	42
-	+	94	8
-	+	35	14
-	+	36	0
-	+	35	67
-	+	100	15
-	+	100	0
-	+	100	0
-	+	100	0
-	+	34	15
-	+	36	0
-	+	28	0
-	+	56	0
-	+	100	54
-	+	100	0
-	+	100	8
-	+	100	30
-	+	35	43
-	+	34	0
-	+	134	18
-	+	134	0
-	+	134	0
-	+	134	26
-	+	134	19
-	+	120	0
-	+	134	27
-	+	120	0
-	+	134	35
-	+	120	0
-	+	101	0
-	+	100	0
-	+	100	0
-	+	134	15
-	+	134	13
-	+	135	17
-	+	127	0
-	z	127	2
 
 > ~/gb_ips/training/views.py
 	"	96	0
@@ -1719,9 +1673,6 @@ $
 	.	1	38
 	+	1	0
 	+	1	38
-
-> ~/.ssh/id_rsa.pub
-	"	1	0
 
 > ~/learn/readme.txt
 	"	5	0

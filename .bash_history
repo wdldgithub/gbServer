@@ -1,170 +1,3 @@
-cd data
-cd ..
-python manage.py sqlall books
-python manage.py migrate
-python manage.py sqlall books
-python manage.py sqlall data
-python manage.py sqlmigrate
-python manage.py sqlflush
-python manage.py sqlmigrate
-python manage.py sqlall data
-python manage.py migration
-python manage.py migrate
-python manage.py makemigrate
-python manage.py makemigrations
-
-python manage.py migrate
-python manage.py sqlall data
-python manage.py migrate
-python manage.py makemigrations
-python manage.py migrate
-python manage.py sqlall data
-cd ..
-ls
-django-admin.py startproject ips
-ls
-cd ips
-cd ..
-rm -r ips
-ls
-python manage.py makemigrations
-cd back_up
-python manage.py makemigrations
-python manage.py migrate
-cd ..
-cd standard
-cd data
-cd ..
-python manage.py sqlall data
-python manage.py makemigrations
-python manage.py makemigrations -Create model Result
-python manage.py makemigrations Create model Result
-python manage.py makemigrations
-delete migrations folder
-delete migrations
-python manage.py cynsdb
-python manage.py syncdb
-python manage.py sqlall
-python manage.py syncdb
-python manage.py validated
-python manage.py validate
-python manage.py sqlall data
-python manage.py syncdb
-cd..
-cd ..
-cd gb_ips
-cd training
-ls
-vim views.py
-cd ..
-ls
-cd back_up
-ls
-cd ..
-ls
-rm -r back_up
-ls
-cd standard
-ls
-./run.sh
-cd gb_ips
-cd training
-vim models.py
-python
-cd ..
-ls
-cd standard
-ls
-cd data
-vim models.py
-cd ..
-cd gb_ips
-ls
-cd training
-vim views.py
-cd ~/standard/data/models.py
-cd ..
-cd..
-cd ..
-ls
-cd standard
-cd data
-vim models.py
-cd gb_ips
-cd training
-vim views.py
-cd standard
-python manage shell
-python manage.py shell
-cd ..
-cd gb_ips
-cd training
-vim views.py
-mysql -u root -p
-cd standard
-cd data
-vim views.py
-cd standard
-cd data
-vim models.py
-mysql -u root -p
-cd standard
-./run.sh
-cd .
-cd ..
-git
-mysql -u root -p
-cd standard
-ls
-cd data
-vim views.py
-mysql -u root -p
-cd standard
-./run.sh
-cd data
-vim models.py
-cd ..
-./run.sh
-cd standard
-ls
-cd data
-vim view.py
-vim views.py
-cd ..
-cd standard
-vim settings.py
-cd ..
-cd data
-vim models.py
-cd ..
-cd standard
-vim models.py
-cd ..
-cd data
-cd ..
-cd standard
-vim settings.py
-cd ..
-cd data
-vim views.py
-config
-fconfig
-redboot-tools
-cd standard
-cd data
-vim views.py
-ls
-cd standard/
-ls
-cd data/
-ls
-vim views.py
-vim models.py
-cd ..
-cd standard/
-vim settings.py
-cd ..
-cd data/
 vim views.py
 cd standard
 cd data
@@ -1998,3 +1831,170 @@ ls
 cd standard
 cd data
 vim views.py
+mysql -u root -p
+logisticregression.py
+python logisticregression.py
+python bayes.py
+ls
+python bayes.py
+ls
+vim test.py
+python test.py
+vim test.py
+ls
+cd class
+ls
+cd 
+pwd
+git init
+git status
+git add *
+git status
+git commit -m "20160426FirstBackout"
+git status
+git add *
+git status
+git commit -m "FirstBckout"
+git status
+git add *
+git status
+class
+find class
+find ips
+cd ips
+git status
+git add db_sqlite3
+git add db.sqlite3
+git status
+git commit -m "FirstBackout"
+git status
+cd ..
+git status
+git add .Xauthority
+git status
+git add .bash_history
+git add .bash_logout
+git add .bashrc
+git add cache/
+git add .cache/
+git add .gitconfig
+git add .mysql_history
+git add .*
+git add .profile
+git add .ssh/
+git add .vim/
+git add .viminfo
+git add .vimrc
+git status
+git commit -m "FirstBakout"
+git status
+git add class
+git statuts
+git status
+cd learn
+git status
+git add *
+git status
+git commit -m "FirstBackout"
+git status
+cd ..
+git status
+cd class
+ls
+git status
+git add employee
+git commit -m "FirstBackout"
+git add *
+git commit -m "FirstBackout"
+git status
+cd ..
+ls
+git status
+git add *
+git status
+git commit -m "FirstBackout"
+git status
+cd .ssh
+find id_rsa
+find id_rsa.pub
+git push
+cd 
+git remote -v
+ls
+git fetch
+git hostname
+cd ./ssh
+cd .ssh
+ls
+vim id_rsa.pub
+more id_rsa.pub
+cd
+git remote add origin https://github.com/wdldgithub//All-in-one.git
+git push -u origin master
+git remote add origin https://github.com/wdldgithub/All-in-one.git
+git push -u origin master
+git init
+echo "# All-in-one">>REDAME.md
+git add README.md
+ls
+find README.md
+git remote add origin https://github.com/wdldgithub/All-in-one.git
+git push -u origin master
+git remote add origin https://github.com/wdldgithub/gbServer.git
+git push -u origin master
+git status
+git add README.md
+git add REDAME.md
+git commit -m "github first test"
+git remote add origin https://github.com/wdldgithub/gbServer.git
+git push -u origin master
+ls
+cd learn
+ls
+cd standard
+ls
+cd data
+ls
+vim test.py
+vim views.py
+ls
+cd ..
+ls
+vim logisticregression.py
+vim bayes.py
+vim logisticregression.py
+vim bayes.py
+vim logisticregression.py
+vim bayes.py
+python bayes.py
+vim bayes.py
+python bayes.py
+vim bayes.py
+python bayes.py
+vim bayes.py
+ls
+cd gb_ips
+ls
+cd training
+ls
+vim views.py
+cd 
+cd learn
+cd standard
+ls
+cd data
+ls
+vim views.py
+cd 
+cd gb_ips
+ls
+cd training
+ls
+vim views.py
+cd 
+python 
+cd /usr/local/lib/python2.7/dist-packages/sklearn
+ls
+vim naive_bayes.py
+cd 
+ls
