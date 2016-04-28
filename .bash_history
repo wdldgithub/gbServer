@@ -1,125 +1,3 @@
-vim views.py
-cd standard
-cd data
-vim models.py
-vim views.py
-cd ..
-ls
-cd ..
-ls
-vim logisticregression.py
-cd standard
-vim urls.py
-cd ..
-ls
-./run.sh
-cd standard
-vim urls.py
-cd ..
-./run.sh
-cd ..
-cd gb_ips
-./run.sh
-cd ..
-cd standard
-cd data
-cd ..
-./run.sh
-cd ..
-ls
-cd standard
-./run.sh
-cd standard
-cd data
-ls
-mysql -u root -p
-cd standard
-cd data
-vim views.py
-ls
-cd standard
-ls
-cd standard
-ls
-vim settings.py
-cd ..
-ls
-cd data
-ls
-vim views.py
-cd standard
-./run
-./run.sh
-cd standard
-./run.sh
-kill port 9300
-mysql -u root -p
-ls
-vim test.py
-python test.py
-vim test.py
-python test.py
-vim test.py
-python test.py
-./run.sh
-cd standard
-ls
-./run.sh
-python manage.py runserver 0.0.0.0:9301
-ls
-cd standard/
-ls
-cd data/
-vim m
-ls
-vim models.py
-vim views.py
-cd ..
-cd standard/
-vim settings.py
-vim urls.py
-cd ..
-cd data/
-vim views.py
-vim models.py
-vim views.py
-cd standard
-python manage.py runserver 0.0.0.0:9301
-./run.sh
-python manage.py runserver 0.0.0.0:9302
-python manage.py runserver 0.0.0.0:9:9302
-python manage.py runserver 0.0.0.0:0:9302
-./run.sh
-python manage.py runserver 0.0.0.0:9302
-cd standard
-./run.sh
-cd ..
-ls
-python test.py
-vim test.py
-python test.py
-vim test.py
-python test.py
-cd standard
-./run.sh
-it
-git
-cd ..
-ls
-mkdir learn
-ls
-cd learn
-pwd
-cd ..
-cp -r standard standard1
-ls
-cd lear
-cd learn
-cp -r standard standard
-cd ..
-ls
-cp -r standard /home/wendingling/learn
-ls
 cd learn
 ls
 cd ..
@@ -1998,3 +1876,125 @@ ls
 vim naive_bayes.py
 cd 
 ls
+cd gb_ips
+ls
+cd training
+ls
+vim views.py
+cd ..
+ls
+./run.sh
+cd 
+ls
+cd learn
+cd standard
+./run.sh
+vim views.py
+cd data
+vim views.py
+cd
+ls
+cd gb_ips
+cd training
+vim views.py
+cd 
+cd learn
+ls
+cd standard
+cd data
+ls
+vim views.py
+cd 
+ls
+cd gb_ips
+ls
+cd training
+ls
+vim views.py
+cd learn
+cd 
+cd learn
+cd standard
+ls
+cd data
+ls
+vim views.py
+git status
+git log
+git add .
+git commit -m "FirstBackout"
+git status
+git remote and origin http://github.com/wdldgithub/gbServer.git
+git remote add origin http://github.com/wdldgithub/gbServer.git
+remote origin
+kill origin
+rm origin
+git remote add origin git@github.com:wdldgithub/gbServer.git
+git remote add original git@github.com:wdldgithub/gbServer.git
+git push -u original master
+ls
+cd learn
+ls
+cd standard
+ls
+./run.sh
+cd data
+vim views.py
+cd 
+ls
+cd gb_ips
+ls
+cd training
+ls
+vim views.py
+cd ..
+ls
+cd gb_ips
+ls
+vim urls.py
+cd ..
+cd training
+vim views.py
+cd 
+cd standard
+cd data
+vim views.py
+cd 
+cd standard
+ls
+vim run.sh
+cd data
+ls
+vim views.py
+cd 
+ls
+cd gb_ips
+cd training
+ls
+vim views.py
+ls
+rm data.txt
+ls
+vim views.py
+cd 
+cd learn
+cd standard
+ls
+./run.sh
+ls
+vim data.txt
+cd 
+python location.py
+vim bayes
+vim bayes.py 
+python location.py
+cd learn 
+ls
+cd standard
+ls
+cd data
+ls
+cd ..
+./run.sh
+cd 
+python location.py

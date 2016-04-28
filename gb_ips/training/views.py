@@ -41,10 +41,11 @@ class Set(object):
     @classmethod
     def get_all_data(self):# 取出所有待处理数据，并将时间和bssid格式化
         all_data = []
+
         for i in TrainingRawData.objects.filter(floor_id = '01'):# 仅取一楼的数据
         # 只留下bssid，rssi，x，y，createtime
             all_data.append([i.bssid, float(i.rssi), i.x, i.y, i.createtime])
-        '''
+            '''
         for i in TrainingRawData.objects.filter(createtime = '2016-01-20 11:01:26'):
             all_data.append([i.bssid, float(i.rssi), i.x, i.y, i.createtime])
         for i in TrainingRawData.objects.filter(createtime = '2016-01-20 11:01:25'):
@@ -53,7 +54,7 @@ class Set(object):
             all_data.append([i.bssid, float(i.rssi), i.x, i.y, i.createtime])
         for i in TrainingRawData.objects.filter(createtime = '2016-01-20 11:01:23'):
             all_data.append([i.bssid, float(i.rssi), i.x, i.y, i.createtime])
-        '''
+            '''
         for item in all_data:# 格式化
             item[0] = item[0].replace(':','').encode('utf-8')# bssid
             item[2] = float(item[2])*250 # x坐标
@@ -81,16 +82,22 @@ class Convert(object):
                 total = hstack((np.zeros(66), np.ones(2)))# 同一时间下66个rssi和x，y坐标
                 for j in temp:
                     total[66:68] = j[2:4]# 存x,y
-                    position = bssid_dic[j[0]]# i[0]为bssid值,根据bssid找出该rssi在total中的位置
-                    total[position] = j[1]# i[1]为rssi
+                    position = bssid_dic[j[0]]# j[0]为bssid值,根据bssid找出该rssi在total中的位置
+                    total[position] = j[1]# j[1]为rssi
                 back_data.append(list(total))
         return back_data
 
 @csrf_exempt
 def run(request):
     co = Convert()
-    back = json.dumps({'data':co.find()})
-    requests.post('http://120.25.86.215:9300/regression/', {'data':back})
+    back = co.find()
+    fp = open('data.txt', 'w+')
+    for item in back:
+        fp.write(str(item))
+        fp.write('\n')
+    fp.close()
+    #back = json.dumps({'data':co.find()})
+    # requests.post('http://120.25.86.215:9300/regression/', {'data':back})
     return HttpResponse(back)
 
 #############################################################
